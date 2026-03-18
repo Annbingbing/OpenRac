@@ -1,0 +1,30 @@
+# mini-agent 配置示例
+# 复制此文件为 config.yaml 并修改配置
+
+# LLM Provider 配置（单 provider 简写）
+provider:
+  type: openai
+  base_url: "https://api.****.org/v1"
+  api_key: "sk-XQSs2QXtWdA****XWv3Cppl8rsclI"
+  model: "claude-opus-4-6"
+  timeout: 120s
+
+# HTTP Gateway 配置
+gateway:
+  addr: ":8080"         # 监听地址
+  token: ""             # Bearer token 认证（空则不认证）
+
+# 工作区目录（文件工具的沙箱根目录）
+workspace_dir: "."
+
+# 上下文 token 上限
+max_context_tokens: 100000
+
+
+# HTTP 代理（用于 web_fetch 工具访问外网）
+#proxy: "http://127.0.0.1:7897"
+
+# Telegram Bot 配置
+telegram:
+  enabled: true
+  bot_token: "8******61:AAF*********sEwIFiPSyJxu-g"
