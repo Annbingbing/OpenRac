@@ -150,7 +150,3 @@ curl -X POST http://localhost:8080/v1/chat \
 | `proxy` | HTTP 代理 | — |
 | `max_context_tokens` | 最大上下文 Token 数 | `100000` |
 | `system_prompt_extra` | 追加到系统提示词 | — |`
-
-## License
-
-MIT
