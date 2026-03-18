@@ -83,10 +83,9 @@ providers:
     api_key: sk-xxxxxxxx                  # 替换为你的 API Key
     model: gpt-4o
 
-# Telegram Bot（可选）
-# telegram:
-#   enabled: true
-#   bot_token: "123456:ABCdef..."
+telegram:
+  enabled: true
+  bot_token: "替换为你的 Bot Token"       # 从 @BotFather 获取
 
 # HTTP API（可选，对外暴露必须设置 token）
 # gateway:
