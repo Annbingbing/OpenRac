@@ -17,7 +17,7 @@ New-Item -ItemType Directory -Force -Path $InstallDir | Out-Null
 # 下载二进制
 Write-Host "下载中: $Url" -ForegroundColor Cyan
 Invoke-WebRequest -Uri $Url -OutFile "$InstallDir\$BinName" -UseBasicParsing
-Write-Host "下载完成" -ForegroundColor Green
+Write-Host "✓ 二进制已安装到：$InstallDir\$BinName" -ForegroundColor Green
 
 # 添加到用户 PATH
 $UserPath = [Environment]::GetEnvironmentVariable("PATH", "User")

@@ -51,6 +51,7 @@ else
 fi
 
 chmod +x "$INSTALL_DIR/$BIN_NAME"
+echo "${GREEN}✓ 二进制已安装到：$INSTALL_DIR/$BIN_NAME${NC}"
 
 # 写入 PATH
 add_to_path() {
